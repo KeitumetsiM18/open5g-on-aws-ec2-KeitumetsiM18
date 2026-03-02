@@ -559,9 +559,7 @@ When reporting issues, include:
 ## Additional Resources
 
 - [Kubernetes Debugging Guide](https://kubernetes.io/docs/tasks/debug/)
-- [SD-Core Documentation](https://docs.sd-core.opennetworking.org/)
 - [UERANSIM Documentation](https://github.com/aligungr/UERANSIM)
-- [5G NR Specifications](https://www.3gpp.org/specifications-technologies/specifications-by-release)
 
 ## Next Steps
 
