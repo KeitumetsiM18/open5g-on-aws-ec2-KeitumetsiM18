@@ -1,4 +1,76 @@
 <<<<<<< HEAD
+# K3s on AWS Deployment
+
+## Introduction
+This project demonstrates the deployment of a lightweight Kubernetes cluster using K3s on Amazon Web Services (AWS) EC2 instances.
+
+---
+
+## System Requirements
+
+- Instance Type: t3.large
+- CPU: 2 vCPUs
+- RAM: 8 GB
+- Storage: 20 GB
+- Operating System: Ubuntu 22.04 LTS
+- Number of Nodes: 3 Control Plane Nodes
+
+---
+
+## Installation Steps
+
+### Step 1: Install K3s
+
+Run the following command on the first master node:
+
+curl -sfL https://get.k3s.io | sh -
+
+### Step 2: Verify the installation
+
+sudo kubectl get nodes
+sudo kubectl get pods -A
+
+---
+
+## Architecture Explanation
+
+K3s is a lightweight Kubernetes distribution designed for resource-constrained environments such as edge computing and IoT systems. It simplifies Kubernetes by removing non-essential components while maintaining full Kubernetes functionality.
+
+The architecture consists of a control plane and worker nodes (agents). The control plane manages cluster operations including scheduling, networking, and state management. The agents run application workloads and communicate with the control plane.
+
+K3s uses containerd as its container runtime for managing containers efficiently. Networking is handled using Flannel, which creates an overlay network allowing pods across different nodes to communicate with each other.
+
+Ingress traffic is managed using an NGINX Ingress controller, which routes external traffic to services running inside the cluster. Storage is provided using the local-path provisioner for dynamic persistent volumes.
+
+---
+
+## Deployment Evidence
+
+### Kubernetes Nodes
+(Screenshot here)
+
+### Kubernetes Pods
+(Screenshot here)
+
+### AWS EC2 Instances
+(Screenshot here)
+
+### K3s Installation Terminal
+(Screenshot here)
+
+---
+
+## Reflection
+
+During this assignment I learned how lightweight Kubernetes distributions such as K3s simplify the deployment of container orchestration platforms. Setting up a cluster on AWS helped me understand the relationship between cloud infrastructure and containerized applications.
+
+One challenge I faced was configuring GitHub repositories and resolving merge conflicts when pushing my work. I resolved this by using Git commands such as git pull, git add, and git push to synchronize my local repository with the remote repository.
+
+Another challenge involved understanding how multiple nodes communicate within a Kubernetes cluster. Through the installation process I learned how the control plane manages cluster state while worker nodes run application workloads.
+
+This assignment also helped me understand how cloud-native technologies relate to modern telecommunications and 5G systems. Kubernetes enables scalable microservices architecture which is essential for cloud-native network functions used in 5G.
+
+Virtualization and containerization make it possible to deploy scalable services quickly across distributed cloud environments. Containers package applications with their dependencies, while orchestration tools such as Kubernetes ensure that these containers run reliably and can scale according to demand.
 # Assignment 1 - K3s on AWS 
 # Assignment 1 — K3s on AWS
 
