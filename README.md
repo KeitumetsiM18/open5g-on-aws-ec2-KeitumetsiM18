@@ -57,7 +57,8 @@ Ingress traffic is managed using an NGINX Ingress controller, which routes exter
 
 
 ### K3s Installation Terminal
-(Screenshot here)
+(Installation)<img width="1583" height="840" alt="image" src="https://github.com/user-attachments/assets/e263b072-465b-4d0f-b7f8-36dcf5ff0e72" />
+
 
 ---
 
