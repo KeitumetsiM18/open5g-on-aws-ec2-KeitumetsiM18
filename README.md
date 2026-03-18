@@ -13,23 +13,23 @@ This project demonstrates the deployment of a lightweight Kubernetes cluster usi
 - RAM: 8 GB
 - Storage: 20 GB
 - Operating System: Ubuntu 22.04 LTS
-- Number of Nodes: 3 Control Plane Nodes
+- Number of Nodes: 1 Control Plane Node (Single-node K3s cluster)
 
 ---
 
 ## Installation Steps
 
 ### Step 1: Install K3s
-
-
+```bash
 curl -sfL https://get.k3s.io | sh -
+```
 
 ### Step 2: Verify the installation
 
+```bash
 sudo k3s kubectl get nodes
 sudo k3s kubectl get pods -A
-
----
+```
 
 ## Architecture Explanation
 
@@ -46,19 +46,19 @@ Ingress traffic is managed using an NGINX Ingress controller, which routes exter
 ## Deployment Evidence
 
 ### Kubernetes Nodes
-![Nodes](nodes.png)<img width="1584" height="351" alt="image" src="https://github.com/user-attachments/assets/4f05cba0-01d6-4ddd-842d-3a95f0159022" />
+<img width="1584" height="351" alt="image" src="https://github.com/user-attachments/assets/4f05cba0-01d6-4ddd-842d-3a95f0159022" />
 
 
 ### Kubernetes Pods
-![Pods](pods.png)<img width="881" height="204" alt="image" src="https://github.com/user-attachments/assets/fbf6fc87-718b-4337-9418-8b3d760d35c6" />
+<img width="881" height="204" alt="image" src="https://github.com/user-attachments/assets/fbf6fc87-718b-4337-9418-8b3d760d35c6" />
 
 
 ### AWS EC2 Instances
-![EC2](ec2.png)<img width="1591" height="775" alt="image" src="https://github.com/user-attachments/assets/3ada1c8e-43aa-4e4e-9bd8-7a653fca43ca" />
+<img width="1591" height="775" alt="image" src="https://github.com/user-attachments/assets/3ada1c8e-43aa-4e4e-9bd8-7a653fca43ca" />
 
 
 ### K3s Installation Terminal
-![Installation](install.png)<img width="1583" height="840" alt="image" src="https://github.com/user-attachments/assets/e263b072-465b-4d0f-b7f8-36dcf5ff0e72" />
+<img width="1583" height="840" alt="image" src="https://github.com/user-attachments/assets/e263b072-465b-4d0f-b7f8-36dcf5ff0e72" />
 
 
 ---
