@@ -35,12 +35,11 @@ sudo k3s kubectl get pods -A
 
 K3s is a lightweight Kubernetes distribution designed for resource-constrained environments such as edge computing and IoT systems. It simplifies Kubernetes by removing non-essential components while maintaining full Kubernetes functionality.
 
-The architecture consists of a control plane and worker nodes (agents). The control plane manages cluster operations including scheduling, networking, and state management. The agents run application workloads and communicate with the control plane.
+The architecture consists of a control plane and worker nodes (agents). In this project, a single-node setup was used, meaning the control plane and workload execution occur on the same node. The control plane manages cluster operations such as scheduling, networking, and state management, while also running application workloads.
 
-K3s uses containerd as its container runtime for managing containers efficiently. Networking is handled using Flannel, which creates an overlay network allowing pods across different nodes to communicate with each other.
+K3s uses containerd as its container runtime for efficient container management. Networking is handled using Flannel, which provides an overlay network that allows communication between pods across the cluster.
 
-Ingress traffic is managed using an NGINX Ingress controller, which routes external traffic to services running inside the cluster. Storage is provided using the local-path provisioner for dynamic persistent volumes.
-
+Ingress traffic is managed using the Traefik Ingress controller (default in K3s), which routes external traffic to services running inside the cluster. Storage is provided using the local-path provisioner for dynamic persistent volume allocation.
 ---
 
 ## Deployment Evidence
