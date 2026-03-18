@@ -53,7 +53,8 @@ Ingress traffic is managed using an NGINX Ingress controller, which routes exter
 (Screenshot here)
 
 ### AWS EC2 Instances
-(Screenshot here)
+(Instances)<img width="1591" height="775" alt="image" src="https://github.com/user-attachments/assets/3ada1c8e-43aa-4e4e-9bd8-7a653fca43ca" />
+
 
 ### K3s Installation Terminal
 (Screenshot here)
