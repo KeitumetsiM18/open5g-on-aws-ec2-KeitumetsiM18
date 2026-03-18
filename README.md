@@ -65,15 +65,13 @@ Ingress traffic is managed using an NGINX Ingress controller, which routes exter
 
 ## Reflection
 
-During this assignment I learned how lightweight Kubernetes distributions such as K3s simplify the deployment of container orchestration platforms. Setting up a cluster on AWS helped me understand the relationship between cloud infrastructure and containerized applications.
+During this assignment, I gained practical experience in deploying a lightweight Kubernetes cluster using K3s on AWS EC2 instances. This process helped me understand how cloud infrastructure supports containerized applications and how Kubernetes simplifies the deployment, management, and orchestration of these applications. I also developed a clearer understanding of how control plane components manage cluster operations such as scheduling and networking, while nodes execute workloads within the cluster.
 
-One challenge I faced was configuring GitHub repositories and resolving merge conflicts when pushing my work. I resolved this by using Git commands such as git pull, git add, and git push to synchronize my local repository with the remote repository.
+One of the main challenges I encountered was establishing a stable connection to my EC2 instance and ensuring I was working in the correct environment. Initially, I mistakenly used AWS CloudShell instead of connecting directly to the EC2 instance, which caused several installation errors, including issues with system services. I resolved this by correctly using SSH with a key pair to access the Ubuntu instance, which allowed the K3s installation to proceed successfully. Another challenge involved permission errors when running Kubernetes commands. I learned how to use elevated privileges with sudo and how Kubernetes configuration files control access to the cluster.
 
-Another challenge involved understanding how multiple nodes communicate within a Kubernetes cluster. Through the installation process I learned how the control plane manages cluster state while worker nodes run application workloads.
+This assignment also helped me understand how K3s relates to production Kubernetes environments and modern 5G cloud-native systems. While K3s is a lightweight version of Kubernetes, it still maintains core functionalities such as container orchestration, service management, and networking. These features are essential in production environments, especially in 5G networks where microservices and cloud-native architectures are used to deliver scalable and low-latency services.
 
-This assignment also helped me understand how cloud-native technologies relate to modern telecommunications and 5G systems. Kubernetes enables scalable microservices architecture which is essential for cloud-native network functions used in 5G.
-
-Virtualization and containerization make it possible to deploy scalable services quickly across distributed cloud environments. Containers package applications with their dependencies, while orchestration tools such as Kubernetes ensure that these containers run reliably and can scale according to demand.
+Additionally, I learned how virtualization and containerization enable scalable services. Virtualization allows multiple virtual machines to run on shared hardware, while containerization ensures that applications run consistently across different environments. Kubernetes then orchestrates these containers, enabling automatic scaling, load balancing, and high availability. Overall, this assignment improved my troubleshooting skills, strengthened my understanding of cloud-native technologies, and prepared me for real-world IT and networking environments.
 # Assignment 1 - K3s on AWS 
 # Assignment 1 — K3s on AWS
 
