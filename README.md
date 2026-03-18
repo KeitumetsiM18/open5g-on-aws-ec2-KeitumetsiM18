@@ -21,14 +21,13 @@ This project demonstrates the deployment of a lightweight Kubernetes cluster usi
 
 ### Step 1: Install K3s
 
-Run the following command on the first master node:
 
 curl -sfL https://get.k3s.io | sh -
 
 ### Step 2: Verify the installation
 
-sudo kubectl get nodes
-sudo kubectl get pods -A
+sudo k3s kubectl get nodes
+sudo k3s kubectl get pods -A
 
 ---
 
