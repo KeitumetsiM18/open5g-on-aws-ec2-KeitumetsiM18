@@ -47,7 +47,8 @@ Ingress traffic is managed using an NGINX Ingress controller, which routes exter
 ## Deployment Evidence
 
 ### Kubernetes Nodes
-(Screenshot here)
+(Nodes)<img width="1584" height="351" alt="image" src="https://github.com/user-attachments/assets/4f05cba0-01d6-4ddd-842d-3a95f0159022" />
+
 
 ### Kubernetes Pods
 (Screenshot here)
