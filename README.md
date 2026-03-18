@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # K3s on AWS Deployment
 
 ## Introduction
@@ -47,19 +47,19 @@ Ingress traffic is managed using an NGINX Ingress controller, which routes exter
 ## Deployment Evidence
 
 ### Kubernetes Nodes
-(Nodes)<img width="1584" height="351" alt="image" src="https://github.com/user-attachments/assets/4f05cba0-01d6-4ddd-842d-3a95f0159022" />
+![Nodes](nodes.png)<img width="1584" height="351" alt="image" src="https://github.com/user-attachments/assets/4f05cba0-01d6-4ddd-842d-3a95f0159022" />
 
 
 ### Kubernetes Pods
-(Pods)<img width="881" height="204" alt="image" src="https://github.com/user-attachments/assets/fbf6fc87-718b-4337-9418-8b3d760d35c6" />
+![Pods](pods.png)<img width="881" height="204" alt="image" src="https://github.com/user-attachments/assets/fbf6fc87-718b-4337-9418-8b3d760d35c6" />
 
 
 ### AWS EC2 Instances
-(Instances)<img width="1591" height="775" alt="image" src="https://github.com/user-attachments/assets/3ada1c8e-43aa-4e4e-9bd8-7a653fca43ca" />
+![EC2](ec2.png)<img width="1591" height="775" alt="image" src="https://github.com/user-attachments/assets/3ada1c8e-43aa-4e4e-9bd8-7a653fca43ca" />
 
 
 ### K3s Installation Terminal
-(Installation)<img width="1583" height="840" alt="image" src="https://github.com/user-attachments/assets/e263b072-465b-4d0f-b7f8-36dcf5ff0e72" />
+![Installation](install.png)<img width="1583" height="840" alt="image" src="https://github.com/user-attachments/assets/e263b072-465b-4d0f-b7f8-36dcf5ff0e72" />
 
 
 ---
