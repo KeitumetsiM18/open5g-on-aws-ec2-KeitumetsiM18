@@ -51,7 +51,8 @@ Ingress traffic is managed using an NGINX Ingress controller, which routes exter
 
 
 ### Kubernetes Pods
-(Screenshot here)
+(Pods)<img width="881" height="204" alt="image" src="https://github.com/user-attachments/assets/fbf6fc87-718b-4337-9418-8b3d760d35c6" />
+
 
 ### AWS EC2 Instances
 (Instances)<img width="1591" height="775" alt="image" src="https://github.com/user-attachments/assets/3ada1c8e-43aa-4e4e-9bd8-7a653fca43ca" />
